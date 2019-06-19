@@ -6,3 +6,4 @@
 ![image](https://github.com/zc282840325/GetManager3/blob/master/image/1.png)
 >> PC端
 www.chinaports.com/tidal
+![image](https://github.com/zc282840325/GetManager3/blob/master/image/2.png)
