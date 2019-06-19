@@ -118,6 +118,8 @@ namespace GetManager
             {
                 if (cmb_Port.Text != "==请选择==")
                 {
+                    textBox1.Text = "";
+                    ct.Series.RemoveAt(0);
                     List<string> txData2 = new List<string>();
                     List<string> tyData2 = new List<string>();
                     //拼接请求接口（样：http://www.chinaports.com/tidal/2019/6/17/133）
@@ -174,7 +176,6 @@ namespace GetManager
             ct.Series[0].ChartArea = ct.ChartAreas[0].Name; //设置图表背景框ChartArea 
             ct.Series[0].ChartType = SeriesChartType.Line; //图类型(折线)
             ct.Series[0].Points.DataBindXY(txData2, tyData2); //添加数据
-                                                              //折线段配置
             ct.Series[0].Color = Color.Blue; //线条颜色
             ct.Series[0].BorderWidth = 3; //线条粗细
             ct.Series[0].MarkerBorderColor = Color.Red; //标记点边框颜色
